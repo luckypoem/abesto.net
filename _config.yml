@@ -1,0 +1,34 @@
+# Site settings
+url: http://abesto.net
+title: "Abesto's woes"
+subtitle: Adventures in LAMP-land and beyond
+author: "Zoltán Nagy"
+description: Making developers faster.
+email: abesto@abesto.net
+twitter_username: abesto
+github_username:  abesto
+
+permalink: /:title/
+paginate: 5
+
+google_analytics_tracking_id: UA-17390698-2
+disqus_shortname: abestoswoes
+
+# Build settings
+markdown: redcarpet
+excerpt_separator: '<!-- more -->'
+redcarpet:
+  extensions: [tables]
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Zoltán Nagy"
+    
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
